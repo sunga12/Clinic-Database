@@ -289,3 +289,10 @@ This project is [MIT](./LICENSE) licensed.
 _NOTE: we recommend using the [MIT license](https://choosealicense.com/licenses/mit/) - you can set it up quickly by [using templates available on GitHub](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/adding-a-license-to-a-repository). You can also use [any other license](https://choosealicense.com/licenses/) if you wish._
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## SCHEMA DIAGRAM
+<hr>
+
+![drawSQL-vet-clinic-diagram-export-2023-07-26](https://github.com/sunga12/Clinic-Database/assets/117270680/917d4980-ca5e-41d1-9d33-cb1d4018f22b)
+
+
