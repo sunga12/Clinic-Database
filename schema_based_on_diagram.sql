@@ -34,12 +34,23 @@ CREATE TABLE invoice_items(
 	treatment_id INT REFERENCES treatments(id)
 );
 
+CREATE TABLE treatments_histories(
+	treatments_id INT REFERENCES treatments(id),
+	medical_history_id INT REFERENCES medical_histories(id),
+	PRIMARY KEY(treatments_id, medical_history_id)
+);
+
+
 ALTER TABLE medical_histories ADD CONSTRAINT fk_patients FOREIGN KEY (patient_id) REFERENCES patients(id);
 ALTER TABLE invoices ADD CONSTRAINT fk_medical_histories FOREIGN KEY (medical_history_id) REFERENCES medical_histories(id);
 ALTER TABLE invoice_items ADD CONSTRAINT fk_treatments FOREIGN KEY (treatment_id) REFERENCES treatments(id);
 ALTER TABLE invoice_items ADD CONSTRAINT fk_invoices FOREIGN KEY (invoice_id) REFERENCES invoices(id);
+ALTER TABLE treatments_histories ADD CONSTRAINT fk_treatments FOREIGN KEY (treatments_id) REFERENCES treatments(id);
+ALTER TABLE treatments_histories ADD CONSTRAINT fk_histories FOREIGN KEY (medical_histories_id) REFERENCES medical_histories(id);
 
 CREATE INDEX idx_patient_id ON medical_histories(patient_id);
 CREATE INDEX idx_medical_history_id ON invoices(medical_history_id);
 CREATE INDEX idx_invoice_id ON invoice_items(invoice_id);
 CREATE INDEX idx_treatment_id ON invoice_items(treatment_id);
+CREATE INDEX idx_medical_histories_id ON treatments_histories(medical_histories_id);
+CREATE INDEX idx_treatments_id ON treatments_histories(treatments_id);
