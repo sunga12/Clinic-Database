@@ -138,6 +138,12 @@ You can deploy this project using: **Not available**
 - GitHub: [@Sunga12](https://github.com/sunga12)
 - LinkedIn: [Sungabanja Thawethe](https://linkedin.com/in/sungabanja-thawethe)
 
+👤 **Rabaya Rabu**
+
+- GitHub: [@rabayarabu](https://github.com/rabayarabu)
+- Twitter: [@rabaya_rabu](https://twitter.com/rabaya_rabu)
+- LinkedIn: [LinkedIn](https://linkedin.com/in/rabaya-rabu-142721169/)
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- FUTURE FEATURES -->
